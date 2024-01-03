@@ -1,0 +1,61 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_boost/login
+
+    Login page template
+
+    Example context (json):
+    {
+        "output": {
+            "doctype": "<!DOCTYPE html>",
+            "page_title": "Login page",
+            "favicon": "favicon.ico",
+            "main_content": "<h1>Headers keep HTML validators happy</h1>"
+        }
+    }
+}}
+{{> theme_boost/head }}
+
+<body {{{ bodyattributes }}}>
+{{> core/local/toast/wrapper}}
+
+<div id="page-wrapper" class="container-login">
+    <div class="col-left wave">
+        <div class="left-padding">
+            <p class="font-title fontsize-huge">Gustavet E-learning Center</p>
+            <img class="cat-img" src="https://dl.dropboxusercontent.com/scl/fi/xjchj7inc4f4l6jqf953c/cat.svg?rlkey=crxmzicqp4k2z2lnla9fj4i69&dl=1" alt="kucing">
+        </div>
+    </div>
+    <div class="col-right left-container">
+        <div class="h-30p pt-40px pr-40px flex-disp justify-content-right">
+            <img src="https://dl.dropboxusercontent.com/scl/fi/iwpxysbi76bh8m3hwqtvd/zen.svg?rlkey=zxg5i6wbezk1kndom0omwbff8&dl=1" alt="zen" height="92px" width="98px">
+        </div>
+        <div class="h-70p flex-disp align-items-flex-start justify-content-center">
+            {{{ output.main_content }}}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+{{#js}}
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+});
+{{/js}}

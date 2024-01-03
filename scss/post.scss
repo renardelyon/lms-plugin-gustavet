@@ -1,0 +1,93 @@
+.wave {
+    background-image: url('https://dl.dropboxusercontent.com/scl/fi/y9vc2tweg2oru1ox9rlei/Vector-1.svg?rlkey=6ib75h6o3jzy8k243i9vl5rpb&dl=0');
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+}
+
+.pagelayout-login #page{
+    background: white;
+}
+
+.height-full {
+    height: 100%
+}
+
+.container-login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: clip;
+    .col-left {
+        width: 50%;
+        @extend .height-full;
+    }
+    .col-right {
+        width: 50%;
+        @extend .height-full;
+    }
+}
+
+.left-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cat-img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+
+.left-padding {
+    padding: 176px 105px;
+    padding-right: 500px;
+}
+
+.fontsize-huge {
+    font-size: 110px;
+}
+
+@font-face {
+    font-family: 'secular-one';
+    src: url('https://dl.dropboxusercontent.com/scl/fi/1pj0jpdmhr11b2vojpypu/SecularOne-Regular.ttf?rlkey=x1cfd2dcu4b9okv96g0be44cu&dl=0');
+}
+
+.font-title {
+    color: white;
+    line-height: 100%;
+    font-family: "secular-one", Arial, Helvetica, sans-serif;
+}
+
+.h-30p {
+    height: 30%;
+}
+
+.h-70p {
+    height: 70%;
+}
+
+.flex-disp {
+    display: flex;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-right {
+    justify-content: right;
+}
+
+.pt-40px {
+    padding-top: 40px;
+}
+
+.pr-40px {
+    padding-right: 40px;
+}
