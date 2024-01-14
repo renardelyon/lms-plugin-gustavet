@@ -34,21 +34,24 @@
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
 
-<div id="page-wrapper" class="container-login">
-    <div class="col-left wave">
-        <div class="left-padding">
-            <p class="font-title fontsize-huge">Gustavet E-learning Center</p>
-            <img class="cat-img" src="https://dl.dropboxusercontent.com/scl/fi/xjchj7inc4f4l6jqf953c/cat.svg?rlkey=crxmzicqp4k2z2lnla9fj4i69&dl=1" alt="kucing">
+<div id="page-wrapper">
+
+    {{{ output.standard_top_of_body_html }}}
+
+    <div id="page" class="container-fluid pt-5 mt-0">
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="col-12 h-100" aria-label="{{#str}}content{{/str}}">
+                <div class="login-wrapper">
+                    <div class="login-container">
+                    {{{ output.main_content }}}
+                    </div>
+                </div>
+                </section>
+            </div>
         </div>
     </div>
-    <div class="col-right left-container">
-        <div class="h-30p pt-40px pr-40px flex-disp justify-content-right">
-            <img src="https://dl.dropboxusercontent.com/scl/fi/iwpxysbi76bh8m3hwqtvd/zen.svg?rlkey=zxg5i6wbezk1kndom0omwbff8&dl=1" alt="zen" height="92px" width="98px">
-        </div>
-        <div class="h-70p flex-disp align-items-flex-start justify-content-center">
-            {{{ output.main_content }}}
-        </div>
-    </div>
+    {{> theme_boost/footer }}
 </div>
 
 </body>

@@ -5,7 +5,11 @@
 }
 
 .pagelayout-login #page{
-    background: white;
+    background-image: url($wallpaper-image-link);
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .height-full {
@@ -54,10 +58,23 @@
     src: url('https://dl.dropboxusercontent.com/scl/fi/1pj0jpdmhr11b2vojpypu/SecularOne-Regular.ttf?rlkey=x1cfd2dcu4b9okv96g0be44cu&dl=0');
 }
 
-.font-title {
-    color: white;
+.font-title-login-page {
+    font-size: 48px;
+    color: black;
     line-height: 100%;
     font-family: "secular-one", Arial, Helvetica, sans-serif;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+h1.login-heading {
+    font-size: $h2-font-size;
+    padding-right: 4rem;
 }
 
 .h-30p {
